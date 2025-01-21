@@ -1,0 +1,15 @@
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.csproj.AssemblyReference.cache
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.AssemblyInfoInputs.cache
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.AssemblyInfo.cs
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.csproj.CoreCompileInputs.cache
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\bin\Debug\net8.0\RestauranteAPI.Application.deps.json
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\bin\Debug\net8.0\RestauranteAPI.Application.dll
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\bin\Debug\net8.0\RestauranteAPI.Application.pdb
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\bin\Debug\net8.0\RestauranteAPI.Domain.dll
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\bin\Debug\net8.0\RestauranteAPI.Domain.pdb
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\Restaura.4ED865F9.Up2Date
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.dll
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\refint\RestauranteAPI.Application.dll
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\RestauranteAPI.Application.pdb
+C:\Users\joaom\OneDrive\Área de Trabalho\LEDS\backend\RestauranteAPI\RestauranteAPI.Application\obj\Debug\net8.0\ref\RestauranteAPI.Application.dll

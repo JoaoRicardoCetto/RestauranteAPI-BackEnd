@@ -1,0 +1,32 @@
+networks:
+  backend:
+services:
+  sqlserver:
+    container_name: sqlserver
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Senha@123
+    networks:
+      - backend
+    ports:
+      - "1433:1433"
+
+  restauranteapi:
+    build:
+      context: .
+      dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
+    networks:
+      - backend
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - sqlserver
+    environment:
+      SqlServer: "Server=sqlserver,1433;Database=restauranteapi;User ID=sa;Password=Senha@123;Trusted_Connection=False;TrustServerCertificate=True;"
+      ApiKey: ""
+      JwtPrivateKey: ""
+      PasswordSaltKey: ""
+      DefaultFromEmail: ""
+      EmailApiKey: ""

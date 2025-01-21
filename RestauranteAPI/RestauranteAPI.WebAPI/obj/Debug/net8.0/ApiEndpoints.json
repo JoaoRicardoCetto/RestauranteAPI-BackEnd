@@ -1,0 +1,661 @@
+[
+  {
+    "ContainingType": "Microsoft.AspNetCore.OData.Routing.Controllers.MetadataController",
+    "Method": "GetServiceDocument",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.OData.ODataServiceDocument",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "api/"
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.OData.Routing.Controllers.MetadataController",
+    "Method": "GetMetadata",
+    "RelativePath": "api/$metadata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.OData.Edm.IEdmModel",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "api/$metadata"
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetAll.GetAllCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetById.GetByIdCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Delete.DeleteCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetAll.GetAllCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetById.GetByIdCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Delete.DeleteCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetAll.GetAllCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetById.GetByIdCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Delete.DeleteCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Cidade/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetAll.GetAllCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetById.GetByIdCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Delete.DeleteCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Cidade/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetAll.GetAllCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.GetById.GetByIdCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Create.CreateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.CidadeCase.Delete.DeleteCidadeCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.CidadeResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Cidade/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.CidadeCase.Update.UpdateCidadeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetAll.GetAllClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetById.GetByIdClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Delete.DeleteClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetAll.GetAllClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetById.GetByIdClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Delete.DeleteClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetAll.GetAllClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetById.GetByIdClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Delete.DeleteClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetAll.GetAllClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetById.GetByIdClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Delete.DeleteClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetAll.GetAllClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.GetById.GetByIdClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Create.CreateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.ClienteCase.Delete.DeleteClienteCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.ClienteResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.ClienteCase.Update.UpdateClienteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetAll.GetAllPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetById.GetByIdPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Delete.DeletePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Pedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetAll.GetAllPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetById.GetByIdPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Delete.DeletePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Pedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetAll.GetAllPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetById.GetByIdPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Delete.DeletePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Linq.IQueryable\u00601[[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=false",
+          "application/json;odata.metadata=minimal;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=full;IEEE754Compatible=false",
+          "application/json;odata.metadata=full;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=false",
+          "application/json;odata.metadata=none;IEEE754Compatible=true",
+          "application/json;odata.streaming=true;IEEE754Compatible=false",
+          "application/json;odata.streaming=true;IEEE754Compatible=true",
+          "application/json;odata.streaming=false;IEEE754Compatible=false",
+          "application/json;odata.streaming=false;IEEE754Compatible=true",
+          "application/json;IEEE754Compatible=false",
+          "application/json;IEEE754Compatible=true",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetAll.GetAllPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetById.GetByIdPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Delete.DeletePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestauranteAPI.WebApi.Controllers.BaseControllers.BaseController\u00606[[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetAll.GetAllPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.GetById.GetByIdPedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Create.CreatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.UseCase.Entities.PedidoCase.Delete.DeletePedidoCommand, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[RestauranteAPI.Application.DTOs.Entities.Response.PedidoResponseDTO, RestauranteAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Command",
+        "Type": "RestauranteAPI.Application.UseCase.Entities.PedidoCase.Update.UpdatePedidoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
