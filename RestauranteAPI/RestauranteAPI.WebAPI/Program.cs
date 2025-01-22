@@ -51,7 +51,9 @@ app.MapControllers();
 
 app.Run();
 
-
+/*PERGUNTAR O PQ DO ERRO AO VINICIUS OU BRUNO
+Quando eu comento o que dá erro nessas linhas, o código roda e abre o swagger normal,
+porém eu acho q o banco não funciona corretamente */
 void CreateDatabase(WebApplication app)
 {
     var serviceScope = app.Services.CreateScope();
