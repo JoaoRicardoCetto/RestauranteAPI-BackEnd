@@ -7,11 +7,12 @@ using System.ComponentModel.DataAnnotations.Schema;
   namespace RestauranteAPI.Domain.Entities
     {
     public  class Pedido : BaseEntity {
-      public DateTimeOffset Data { get; set; }
-      public decimal Valor { get; set; }
-      public Guid PedidoClienteId { get; set; }
-      //ManyToOne
-      public Cliente? Cliente { get; set; }
+        public DateTimeOffset Data { get; set; }
+        public decimal Valor { get; set; }
+        public EstadoPedido EstadoPedido { get; set; }
+        public Guid PedidoClienteId { get; set; }
+        //ManyToOne
+        public Cliente? Cliente { get; set; }
 
     public Pedido(DateTimeOffset data,decimal valor, Guid pedidoclienteid, Guid clienteId)
         {
@@ -35,9 +36,19 @@ using System.ComponentModel.DataAnnotations.Schema;
       {
         var errors = new List<string>();
 
-        // Validations
-
-        return errors;
+            if (data == default)
+            {
+                errors.Add("O campo data do Pedido é obrigatório!");
+            }
+            if (valor < 0)
+            {
+                errors.Add("O valor do pedido não pode ser negativo");
+            }
+            if (valor == default)
+            {
+                errors.Add("O campo valor do pedido é obrigatório");
+            }
+            return errors;
       }
     }
     }

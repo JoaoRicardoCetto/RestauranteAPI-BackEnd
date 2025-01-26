@@ -28,7 +28,7 @@ namespace RestauranteAPI.Domain.Entities
         private List<string>CidadeValidation(string nome)
         {
             var errors = new List<string>();
-            if (string.IsNullOrEmpty(nome));
+            if (string.IsNullOrEmpty(nome))
             {
                 errors.Add("O campo nome de Cidade é obrigatório!");
             }

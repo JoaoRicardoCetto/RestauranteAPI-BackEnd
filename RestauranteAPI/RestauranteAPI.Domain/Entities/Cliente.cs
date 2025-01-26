@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
       public string Nome { get; set; }
       public string Telefone { get; set; }
       public String Identification { get; set; }
-      public Guid ClienteCidadeId { get; set; }
+      public Guid? ClienteCidadeId { get; set; }
       //OneToMany
       public ICollection<Pedido>? Pedidos { get; set;}
       //ManyToOne
@@ -38,11 +38,20 @@ using System.ComponentModel.DataAnnotations.Schema;
             um erro no Banco de Dados*/
         private List<string>ClienteValidation(string nome,string telefone,String identification, Guid clientecidadeid, Guid cidadeId)
         {
-        var errors = new List<string>();
-
-        // Validations
-
-        return errors;
-      }
+            var errors = new List<string>();
+            if (string.IsNullOrEmpty(nome))
+            {
+                errors.Add("O campo nome de Cidade é obrigatório!");
+            }
+            if (string.IsNullOrEmpty(telefone))
+            {
+                errors.Add("O campo nome de Cidade é obrigatório!");
+            }
+            if (string.IsNullOrEmpty(identification))
+            {
+                errors.Add("O campo nome de Cidade é obrigatório!");
+            }
+            return errors;
+        }
     }
   }

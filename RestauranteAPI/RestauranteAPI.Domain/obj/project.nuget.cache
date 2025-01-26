@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MgVIsaxmy9g=",
+  "dgSpecHash": "WSDOxBR1eZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\LEDS\\backend\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+  "projectFilePath": "C:\\Users\\joaom\\OneDrive\\Documentos\\GitHub\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaom\\.nuget\\packages\\emailvalidation\\1.0.10\\emailvalidation.1.0.10.nupkg.sha512",
     "C:\\Users\\joaom\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",

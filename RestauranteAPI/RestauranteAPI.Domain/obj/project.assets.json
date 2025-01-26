@@ -1752,11 +1752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\LEDS\\backend\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\joaom\\OneDrive\\Documentos\\GitHub\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
       "projectName": "RestauranteAPI.Domain",
-      "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\LEDS\\backend\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+      "projectPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\GitHub\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\LEDS\\backend\\RestauranteAPI\\RestauranteAPI.Domain\\obj\\",
+      "outputPath": "C:\\Users\\joaom\\OneDrive\\Documentos\\GitHub\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
