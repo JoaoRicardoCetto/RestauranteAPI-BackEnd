@@ -59,10 +59,13 @@ void CreateDatabase(WebApplication app)
     var serviceScope = app.Services.CreateScope();
     var dataContext = serviceScope.ServiceProvider.GetService<AppDbContext>();
     dataContext?.Database.EnsureCreated();
-    dataContext?.Database.Migrate();
+    //Funcionava no inicio do projeto
+    //dataContext?.Database.Migrate();
 
     // Carga no banco de dados
-    var sqlFile = "./Scripts/inserts.sql";
-    var sql = File.ReadAllText(sqlFile);
-    dataContext?.Database.ExecuteSqlRaw(sql);
+    //var sqlFile = "./Scripts/inserts.sql";
+
+    //Usado no Conecta, porém não é necessário neste crud básico
+    //var sql = File.ReadAllText(sqlFile);
+    //dataContext?.Database.ExecuteSqlRaw(sql);
 }

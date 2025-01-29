@@ -14,7 +14,11 @@ using System.ComponentModel.DataAnnotations.Schema;
         //ManyToOne
         public Cliente? Cliente { get; set; }
 
-    public Pedido(DateTimeOffset data,decimal valor, Guid pedidoclienteid, Guid clienteId)
+        public Pedido()
+        {
+        }
+
+        public Pedido(DateTimeOffset data,decimal valor, Guid pedidoclienteid, Guid clienteId)
         {
 
           var validationErrors = PedidoValidation(data,valor,pedidoclienteid, clienteId);
@@ -35,7 +39,7 @@ using System.ComponentModel.DataAnnotations.Schema;
         private List<string>PedidoValidation(DateTimeOffset data,decimal valor, Guid pedidoclienteid, Guid clienteId)
       {
         var errors = new List<string>();
-
+            //Atributos como DateTimeOffSet nunca são inicializados como null, por isso a comparação com default
             if (data == default)
             {
                 errors.Add("O campo data do Pedido é obrigatório!");

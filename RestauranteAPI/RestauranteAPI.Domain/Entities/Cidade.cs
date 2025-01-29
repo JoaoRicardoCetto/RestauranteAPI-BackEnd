@@ -12,6 +12,10 @@ namespace RestauranteAPI.Domain.Entities
         //Relação de 1 pra N com Cliente
         public ICollection<Cliente>? Clientes { get; set;}
 
+        public Cidade()
+        {
+        }
+
         public Cidade(string nome)
         {
             var validationErrors = CidadeValidation(nome);

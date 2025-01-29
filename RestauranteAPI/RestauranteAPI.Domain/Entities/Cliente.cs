@@ -17,7 +17,11 @@ using System.ComponentModel.DataAnnotations.Schema;
       //ManyToOne
       public Cidade? Cidade { get; set; }
 
-    public Cliente(string nome,string telefone,String identification, Guid clientecidadeid, Guid cidadeId)
+        public Cliente()
+        {
+        }
+
+        public Cliente(string nome,string telefone,String identification, Guid clientecidadeid, Guid cidadeId)
         {
 
           var validationErrors = ClienteValidation(nome,telefone,identification,clientecidadeid, cidadeId);
@@ -41,15 +45,15 @@ using System.ComponentModel.DataAnnotations.Schema;
             var errors = new List<string>();
             if (string.IsNullOrEmpty(nome))
             {
-                errors.Add("O campo nome de Cidade é obrigatório!");
+                errors.Add("O campo nome de Cliente é obrigatório!");
             }
             if (string.IsNullOrEmpty(telefone))
             {
-                errors.Add("O campo nome de Cidade é obrigatório!");
+                errors.Add("O campo telefone de Cliente é obrigatório!");
             }
             if (string.IsNullOrEmpty(identification))
             {
-                errors.Add("O campo nome de Cidade é obrigatório!");
+                errors.Add("O campo identification de Cliente é obrigatório!");
             }
             return errors;
         }
