@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Security\Account\UseCases\**" />
-    <EmbeddedResource Remove="Security\Account\UseCases\**" />
-    <None Remove="Security\Account\UseCases\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="EmailValidation" Version="1.0.10" />
     <PackageReference Include="Flunt" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.2.5" />

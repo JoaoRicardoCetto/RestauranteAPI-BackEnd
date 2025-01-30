@@ -1,11 +1,9 @@
 using RestauranteAPI.Domain.Interfaces;
 using RestauranteAPI.Infrastructure.Context;
 using RestauranteAPI.Infrastructure.Repositories;
-using RestauranteAPI.Domain.Interfaces.Security;
 using RestauranteAPI.Domain.Interfaces.Common;
 using RestauranteAPI.Domain.Interfaces.Entities;
 using RestauranteAPI.Infrastructure.Repositories.Entities;
-using RestauranteAPI.Infrastructure.Security.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,8 +19,6 @@ namespace RestauranteAPI.Infrastructure
             IServiceCollection serviceCollection = services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString, x => x.MigrationsAssembly("RestauranteAPI.Infrastructure")), ServiceLifetime.Scoped);
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<ICidadeRepository, CidadeRepository>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();

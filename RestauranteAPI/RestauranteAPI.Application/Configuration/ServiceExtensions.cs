@@ -3,8 +3,6 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using RestauranteAPI.Application.Interfaces.Entities;
 using RestauranteAPI.Application.Services.Entities;
-using RestauranteAPI.Application.Security.Interfaces;
-using RestauranteAPI.Application.Security.Services;
 using RestauranteAPI.Application.Shared.Behavior;
 using System.Reflection;
 
@@ -19,7 +17,6 @@ namespace RestauranteAPI.Application.Services
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
-            services.AddTransient<IService, EmailService>();
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<ICidadeService, CidadeService>();
             services.AddScoped<IPedidoService, PedidoService>();
