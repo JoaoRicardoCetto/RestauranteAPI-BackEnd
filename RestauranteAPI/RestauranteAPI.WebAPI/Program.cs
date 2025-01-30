@@ -62,7 +62,7 @@ void CreateDatabase(WebApplication app)
     //Funcionava no inicio do projeto
     //dataContext?.Database.Migrate();
 
-    // Carga no banco de dados
+    // Carga no banco de dados, não necessária no caso deste crud
     //var sqlFile = "./Scripts/inserts.sql";
 
     //Usado no Conecta, porém não é necessário neste crud básico

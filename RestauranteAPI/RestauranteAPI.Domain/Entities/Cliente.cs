@@ -1,8 +1,5 @@
 using RestauranteAPI.Domain.Common;
-using RestauranteAPI.Domain.Enums;
 using RestauranteAPI.Domain.Validation;
-using System.ComponentModel.DataAnnotations.Schema;
-
 
   namespace RestauranteAPI.Domain.Entities
     {

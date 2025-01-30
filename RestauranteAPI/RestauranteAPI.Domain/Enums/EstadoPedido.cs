@@ -8,8 +8,8 @@ namespace RestauranteAPI.Domain.Enums
 {
     public enum EstadoPedido
     {
-        FEITO,
-        CONCLUIDO,
-        EM_ANDAMENTO
+        FEITO, //0
+        CONCLUIDO, //1
+        EM_ANDAMENTO //2
     }
 }
