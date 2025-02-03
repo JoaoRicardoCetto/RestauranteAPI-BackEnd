@@ -31,6 +31,7 @@ using System.ComponentModel.DataAnnotations.Schema;
           Valor = valor;
           PedidoClienteId = pedidoclienteid;
           PedidoClienteId = clienteId;
+          EstadoPedido = EstadoPedido.FEITO;
         }
 
         /*Apenas uma das várias validações. Essas vallidações são necessárias para retornar o erro

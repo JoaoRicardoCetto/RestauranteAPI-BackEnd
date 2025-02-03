@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RestauranteAPI.Infrastructure.Repositories.Entities
 {
+    // Repositório responsável por operações relacionadas à entidade Cidade.
     public class CidadeRepository : BaseRepository<Cidade>, ICidadeRepository
     {
         public CidadeRepository(AppDbContext context) : base(context) { }

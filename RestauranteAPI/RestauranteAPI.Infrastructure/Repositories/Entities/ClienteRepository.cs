@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RestauranteAPI.Infrastructure.Repositories.Entities
 {
+    // Repositório responsável por operações relacionadas à entidade Cliente.
     public class ClienteRepository : BaseRepository<Cliente>, IClienteRepository
     {
         public ClienteRepository(AppDbContext context) : base(context) { }

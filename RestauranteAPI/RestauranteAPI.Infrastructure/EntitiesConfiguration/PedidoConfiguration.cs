@@ -8,7 +8,7 @@ namespace RestauranteAPI.Infrastructure.EntitiesConfiguration
     {
         public void Configure(EntityTypeBuilder<Pedido> builder)
         {
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.Id); //Possui como chave primária, ID
 
 
         }

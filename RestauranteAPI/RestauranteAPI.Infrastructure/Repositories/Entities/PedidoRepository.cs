@@ -7,8 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RestauranteAPI.Infrastructure.Repositories.Entities
 {
+    // Repositório responsável por operações relacionadas à entidade Pedido.
     public class PedidoRepository : BaseRepository<Pedido>, IPedidoRepository
-    {
+    {   
         public PedidoRepository(AppDbContext context) : base(context) { }
 
     }

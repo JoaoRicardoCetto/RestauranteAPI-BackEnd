@@ -1,0 +1,66 @@
+name: dockercompose15100600488382427229
+services:
+  restauranteapi:
+    build:
+      context: C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd
+      dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ApiKey: ""
+      DefaultFromEmail: ""
+      EmailApiKey: ""
+      JwtPrivateKey: ""
+      PasswordSaltKey: ""
+      SqlServer: Server=sqlserver,1433;Database=restauranteapi;User ID=sa;Password=Senha@123;Trusted_Connection=False;TrustServerCertificate=True;
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        published: "8081"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\joaom\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\joaom\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  sqlserver:
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Senha@123
+    image: mcr.microsoft.com/mssql/server
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+networks:
+  backend:
+    name: dockercompose15100600488382427229_backend
