@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RestauranteAPI.Application.Services.Entities
 {
+    // Serviço responsável por operações relacionadas à entidade Cliente.
     public class ClienteService :
         BaseService<
             ClienteRequestDTO,
@@ -17,7 +18,7 @@ namespace RestauranteAPI.Application.Services.Entities
             Cliente,
             IClienteRepository>, IClienteService
     {
-
+        // Construtor do serviço ClienteService, inicializa as dependências.
         public ClienteService(IMediator mediator, IMapper mapper, IClienteRepository repository) : base(mediator, mapper, repository) { }
 
     }

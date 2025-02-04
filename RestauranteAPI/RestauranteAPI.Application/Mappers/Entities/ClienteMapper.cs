@@ -10,17 +10,22 @@ using RestauranteAPI.Domain.Entities;
 
 namespace RestauranteAPI.Application.Mappers.Entities
 {
+    //Profile é uma entidade do AutoMapper que será responsável pelo auto mapeamento
     public class ClienteMapper : Profile
     {
         public ClienteMapper()
         {
             #region Entidade para DTO's
+            /*Mapeando Cliente Para ClienteRequest e ClienteResponse
+            * O método ReverseMap() garante que o mapeamento
+            * seja tanto de entidade para request ou response quando de request ou response para entidade */
             CreateMap<Cliente, ClienteResponseDTO>().ReverseMap();
             CreateMap<Cliente, ClienteRequestDTO>().ReverseMap();
 
             #endregion
 
             #region Entidade para Commads de Caso de Uso
+            // Mapeia a entidade Cliente para comandos de criação, atualização, obtenção por ID e deleção.
             CreateMap<Cliente, CreateClienteCommand>().ReverseMap();
             CreateMap<Cliente, UpdateClienteCommand>().ReverseMap();
             CreateMap<Cliente, GetByIdClienteCommand>().ReverseMap();
@@ -28,6 +33,7 @@ namespace RestauranteAPI.Application.Mappers.Entities
             #endregion
 
             #region DTO's para Commads de Caso de Uso
+            // Mapeia DTOs de requisição para comandos correspondentes, garantindo a correta associação de ClienteCidadeId
             CreateMap<ClienteRequestDTO, CreateClienteCommand>().ReverseMap()
                                                                               .ForMember(dest => dest.ClienteCidadeId, opt => opt.MapFrom(src => src.CidadeId));
             CreateMap<ClienteRequestDTO, UpdateClienteCommand>().ReverseMap()
@@ -36,6 +42,7 @@ namespace RestauranteAPI.Application.Mappers.Entities
             #endregion
 
             #region Conversão para api response
+            // Mapeia comandos e DTOs para ApiResponse e vice-versa.
             CreateMap<ApiResponse, ClienteRequestDTO>().ReverseMap();
             CreateMap<ApiResponse, CreateClienteCommand>().ReverseMap();
             CreateMap<ApiResponse, UpdateClienteCommand>().ReverseMap();

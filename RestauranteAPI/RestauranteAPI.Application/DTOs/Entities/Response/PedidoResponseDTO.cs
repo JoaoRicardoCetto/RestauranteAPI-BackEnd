@@ -3,6 +3,7 @@ using RestauranteAPI.Domain.Enums;
 
 namespace RestauranteAPI.Application.DTOs.Entities.Response
 {
+    //São os dados de Pedido que são enviados de volta para o front
     public class PedidoResponseDTO : BaseDTO
     {
         public DateTimeOffset Data { get; set; }

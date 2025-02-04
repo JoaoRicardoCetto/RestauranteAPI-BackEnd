@@ -3,6 +3,7 @@ using RestauranteAPI.Domain.Enums;
 
 namespace RestauranteAPI.Application.DTOs.Entities.Response
 {
+    //São os dados de Cliente que são enviados de volta para o front
     public class ClienteResponseDTO : BaseDTO
     {
         public string Nome { get; set; }

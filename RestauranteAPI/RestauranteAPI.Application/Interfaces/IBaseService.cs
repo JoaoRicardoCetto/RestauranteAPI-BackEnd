@@ -2,6 +2,7 @@
 
 namespace RestauranteAPI.Application.Interfaces
 {
+    // Interface base para serviços genéricos, definindo operações CRUD que passam pelas regras de negócio.
     public interface IBaseService<Request, Response, Entity>
     {
         Task<IQueryable<Response>> GetAll();

@@ -4,6 +4,7 @@ using MediatR;
 
 namespace RestauranteAPI.Application.DTOs.Entities.Request
 {
+    // DTO para requisições relacionadas a clientes.
     public class ClienteRequestDTO : IRequest<ApiResponse>
     {
         public Guid Id {get; set;}

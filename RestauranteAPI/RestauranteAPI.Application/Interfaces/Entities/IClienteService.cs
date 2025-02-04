@@ -4,6 +4,8 @@ using RestauranteAPI.Domain.Entities;
 
 namespace RestauranteAPI.Application.Interfaces.Entities
 {
+    // Interface para o serviço de clientes, seguindo a estrutura do IBaseService.
+    //Por ser um crud simples, não foi necessária a implementação de métodos nessa interface
     public interface IClienteService : IBaseService<ClienteRequestDTO, ClienteResponseDTO, Cliente>
     {
     }

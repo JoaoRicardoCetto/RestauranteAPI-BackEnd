@@ -9,13 +9,15 @@ namespace RestauranteAPI.Infrastructure.Repositories
     onde ele faz todas essas alterações de uma vez, isso evita acessos desnecessários ao banco*/
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context; //Contexto do banco de dados
 
-        public UnitOfWork(AppDbContext context)
+        public UnitOfWork(AppDbContext context) 
         {
             _context = context;
         }
-        public async Task Commit(CancellationToken cancellationToken)
+
+        /// Confirma as alterações realizadas no contexto e salva no banco de dados.
+        public async Task Commit(CancellationToken cancellationToken) //Token para cancelamento da operação assíncrona
         {
             await _context.SaveChangesAsync(cancellationToken);
         }
