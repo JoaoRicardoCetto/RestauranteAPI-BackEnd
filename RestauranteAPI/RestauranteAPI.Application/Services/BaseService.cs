@@ -10,7 +10,7 @@ using System.Runtime.Intrinsics.X86;
 
 namespace RestauranteAPI.Application.Services
 {
-    // Serviço base genérico para operações CRUD
+    // Serviço base genérico para operações CRUD, onde se encontrarão as regras de negócio
     public class BaseService<Request, Response, Entity, Repository> : IBaseService<Request, Response, Entity>
        where Entity : BaseEntity
        where Response : BaseDTO

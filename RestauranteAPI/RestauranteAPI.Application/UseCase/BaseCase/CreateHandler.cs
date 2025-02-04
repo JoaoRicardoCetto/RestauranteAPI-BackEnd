@@ -7,6 +7,10 @@ using MediatR;
 
 namespace RestauranteAPI.Application.UseCase.BaseCase
 {
+    //Handlers servem como uma camada de abstração, sempre que receber um command, ele envia pro método específico em seu Service respectivo. A Entidade então é passada para o mediator e em sua lista de commands, ele entende para onde enviar essa entidade
+    //Portanto, não é necessário que o CidadeController saiba sobre o CidadeService, ele só precisa enviar para o mediator
+
+    //<IService (Usado no Handler), Command do Request, >
     public class CreateHandler<IService, CreateRequest, Request, Response, Entity> : IRequestHandler<CreateRequest, ApiResponse>
         where Entity : BaseEntity
         where Response : BaseDTO

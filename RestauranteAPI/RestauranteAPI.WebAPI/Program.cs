@@ -6,15 +6,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.AddServiceDefaults();
-// Add services to the container.
+// Adiciona o services no container
+//Configuração do Banco de Dados (Camada de Infra)
 builder.Services.ConfigurePersistenceApp(builder.Configuration);
+
+//Configuração da Application
 builder.Services.ConfigureApplicationApp();
 
 builder.Services.ConfigureCorsPolicy();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ODataConfiguration();
@@ -51,16 +53,12 @@ app.MapControllers();
 
 app.Run();
 
-/*PERGUNTAR O PQ DO ERRO AO VINICIUS OU BRUNO
-Quando eu comento o que dá erro nessas linhas, o código roda e abre o swagger normal,
-porém eu acho q o banco não funciona corretamente */
+
 void CreateDatabase(WebApplication app)
 {
     var serviceScope = app.Services.CreateScope();
     var dataContext = serviceScope.ServiceProvider.GetService<AppDbContext>();
     dataContext?.Database.EnsureCreated();
-    //Funcionava no inicio do projeto
-    //dataContext?.Database.Migrate();
 
     // Carga no banco de dados, não necessária no caso deste crud
     //var sqlFile = "./Scripts/inserts.sql";
