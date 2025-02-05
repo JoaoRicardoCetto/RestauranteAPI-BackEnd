@@ -1,8 +1,8 @@
-name: dockercompose15100600488382427229
+name: dockercompose13072184823945667011
 services:
   restauranteapi:
     build:
-      context: C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd
+      context: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
       dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -27,13 +27,8 @@ services:
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      ApiKey: ""
       DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      DefaultFromEmail: ""
-      EmailApiKey: ""
-      JwtPrivateKey: ""
       NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
-      PasswordSaltKey: ""
       SqlServer: Server=sqlserver,1433;Database=restauranteapi;User ID=sa;Password=Senha@123;Trusted_Connection=False;TrustServerCertificate=True;
     image: restauranteapi:dev
     labels:
@@ -73,12 +68,12 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI
+        source: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd
+        source: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
         target: /src
         bind:
           create_host_path: true
@@ -138,4 +133,4 @@ services:
         protocol: tcp
 networks:
   backend:
-    name: dockercompose15100600488382427229_backend
+    name: dockercompose13072184823945667011_backend

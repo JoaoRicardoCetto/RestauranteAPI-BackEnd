@@ -23,3 +23,16 @@ C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\
 C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\refint\RestauranteAPI.Domain.dll
 C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.pdb
 C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\ref\RestauranteAPI.Domain.dll
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\bin\Debug\net8.0\RestauranteAPI.Domain.deps.json
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\bin\Debug\net8.0\RestauranteAPI.Domain.dll
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\bin\Debug\net8.0\RestauranteAPI.Domain.pdb
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.AssemblyInfo.cs
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.sourcelink.json
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.dll
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\refint\RestauranteAPI.Domain.dll
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\RestauranteAPI.Domain.pdb
+C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.Domain\obj\Debug\net8.0\ref\RestauranteAPI.Domain.dll

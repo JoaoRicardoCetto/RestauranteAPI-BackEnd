@@ -13,8 +13,6 @@ builder.Services.ConfigurePersistenceApp(builder.Configuration);
 //Configuração da Application
 builder.Services.ConfigureApplicationApp();
 
-builder.Services.ConfigureCorsPolicy();
-
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

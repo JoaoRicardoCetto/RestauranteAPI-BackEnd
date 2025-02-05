@@ -15,8 +15,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI:/app:rw
-      - C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd:/src:rw
+      - C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI:/app:rw
+      - C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd:/src:rw
       - C:\Users\joaom\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\joaom\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro

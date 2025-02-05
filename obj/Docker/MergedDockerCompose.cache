@@ -1,8 +1,8 @@
-name: dockercompose15100600488382427229
+name: dockercompose13072184823945667011
 services:
   restauranteapi:
     build:
-      context: C:\Users\joaom\OneDrive\Documentos\GitHub\RestauranteAPI-BackEnd
+      context: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
       dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
     depends_on:
       sqlserver:
@@ -12,11 +12,6 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
-      ApiKey: ""
-      DefaultFromEmail: ""
-      EmailApiKey: ""
-      JwtPrivateKey: ""
-      PasswordSaltKey: ""
       SqlServer: Server=sqlserver,1433;Database=restauranteapi;User ID=sa;Password=Senha@123;Trusted_Connection=False;TrustServerCertificate=True;
     networks:
       backend: null
@@ -63,4 +58,4 @@ services:
         protocol: tcp
 networks:
   backend:
-    name: dockercompose15100600488382427229_backend
+    name: dockercompose13072184823945667011_backend
