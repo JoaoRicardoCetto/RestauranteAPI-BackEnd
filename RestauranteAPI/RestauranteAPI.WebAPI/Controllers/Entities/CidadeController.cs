@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RestauranteAPI.WebApi.Controllers.Entities
 {
-    [Route("api/Cidade")]
+    [Route("api/Cidade")] //Definição da Rota 
     [ApiController]
     public class CidadeController : BaseController
         <GetAllCidadeCommand,

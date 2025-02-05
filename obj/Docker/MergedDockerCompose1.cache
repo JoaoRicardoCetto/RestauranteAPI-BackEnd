@@ -1,8 +1,8 @@
-name: dockercompose13072184823945667011
+name: dockercompose4215530494277584323
 services:
   restauranteapi:
     build:
-      context: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
+      context: C:\Users\joaom\source\repos\RestauranteAPI-BackEnd
       dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -68,12 +68,12 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI
+        source: C:\Users\joaom\source\repos\RestauranteAPI-BackEnd\RestauranteAPI\RestauranteAPI.WebAPI
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
+        source: C:\Users\joaom\source\repos\RestauranteAPI-BackEnd
         target: /src
         bind:
           create_host_path: true
@@ -133,4 +133,4 @@ services:
         protocol: tcp
 networks:
   backend:
-    name: dockercompose13072184823945667011_backend
+    name: dockercompose4215530494277584323_backend

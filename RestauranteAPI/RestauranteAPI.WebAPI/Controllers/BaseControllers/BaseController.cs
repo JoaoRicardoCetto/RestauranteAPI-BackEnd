@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace RestauranteAPI.WebApi.Controllers.BaseControllers
 {
+    // Controlador base genérico para operações CRUD utilizando o padrão CQRS.
     public class BaseController<GetAllCommand, GetByIdCommand, CreateCommand, UpdateCommand, DeleteCommand, Response> : ODataController
         where Response : BaseDTO
         where GetAllCommand : IRequest<IQueryable<Response>>, new()
@@ -15,7 +16,8 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
         where UpdateCommand : IRequest<ApiResponse>
         where DeleteCommand : IRequest<ApiResponse>
     {
-        protected readonly IMediator _mediator;
+        //MediatR é usado para intermediar chamadas entre o controlador e a camada de aplicação
+        protected readonly IMediator _mediator; 
         protected readonly IMapper _mapper;
         public BaseController(IMediator mediator, IMapper mapper)
         {
@@ -33,6 +35,7 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
 
         [HttpGet("{id}")]
         [EnableQuery(MaxExpansionDepth = 3)]
+        //Obtém um único registro com base no ID fornecido, utilizando MediatR para encaminhar a consulta.
         public async Task<IQueryable<Response>> GetById(Guid id)
         {
 
@@ -40,6 +43,7 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
         }
 
         [HttpPost]
+        //Cria um novo registro, validando a requisição e retornando um resultado, conforme o status da operação.
         public async Task<ActionResult> Create(CreateCommand Command, CancellationToken cancellationToken)
         {
             if (Command == null)
@@ -58,6 +62,7 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
         }
 
         [HttpDelete("{id}")]
+        //Remove um registro com base no ID fornecido. Retorna um BadRequest caso a operação falhe.
         public async Task<ActionResult> Delete(Guid id, CancellationToken cancellationToken)
         {
             if (id == Guid.Empty) return BadRequest();
@@ -76,6 +81,7 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
         }
 
         [HttpPut("{id}")]
+        //Atualiza um registro existente com os dados fornecidos na requisição.
         public async Task<ActionResult> Update(Guid id, UpdateCommand Command, CancellationToken cancellationToken)
         {
             if (id == Guid.Empty)
@@ -110,9 +116,9 @@ namespace RestauranteAPI.WebApi.Controllers.BaseControllers
             return Ok(apiResponse);
         }
 
+        //Retorna uma resposta de requisição inválida
         internal BadRequestObjectResult ApiBadRequestResult(ResponseBase? apiResponse)
         {
-
             this.Response.StatusCode = apiResponse.StatusCode;
             var badRequest = new BadRequestObjectResult(apiResponse);
             badRequest.StatusCode = apiResponse.StatusCode;

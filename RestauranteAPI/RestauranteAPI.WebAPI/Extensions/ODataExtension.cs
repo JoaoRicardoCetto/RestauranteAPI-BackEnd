@@ -25,13 +25,13 @@ namespace RestauranteAPI.WebApi.Extensions
             })
             .AddOData(options => options
                 .SkipToken()
-                .AddRouteComponents("api", GetEdmModel())
-                .Select()
-                .Filter()
-                .OrderBy()
-                .SetMaxTop(4)
-                .Count()
-                .Expand());
+                .AddRouteComponents("api", GetEdmModel()) // Adiciona OData na rota "api"
+                .Select()  // Permite seleção de campos específicos
+                .Filter()  // Permite filtragem de registros (ex: ?$filter=nome eq 'João')
+                .OrderBy() // Permite ordenação (ex: ?$orderby=idade desc)
+                .SetMaxTop(4) // Define um limite máximo de registros retornados
+                .Count()   // Permite contar a quantidade total de registros
+                .Expand()); // Permite expandir dados relacionados (ex: ?$expand=pedidos)
         }
     }
 }

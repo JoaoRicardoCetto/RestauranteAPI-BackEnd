@@ -1,8 +1,8 @@
-name: dockercompose13072184823945667011
+name: dockercompose4215530494277584323
 services:
   restauranteapi:
     build:
-      context: C:\Users\joaom\Source\Repos\RestauranteAPI-BackEnd
+      context: C:\Users\joaom\source\repos\RestauranteAPI-BackEnd
       dockerfile: RestauranteAPI/RestauranteAPI.WebAPI/Dockerfile
     depends_on:
       sqlserver:
@@ -58,4 +58,4 @@ services:
         protocol: tcp
 networks:
   backend:
-    name: dockercompose13072184823945667011_backend
+    name: dockercompose4215530494277584323_backend

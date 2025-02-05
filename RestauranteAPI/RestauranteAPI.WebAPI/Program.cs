@@ -15,24 +15,20 @@ builder.Services.ConfigureApplicationApp();
 
 builder.Services.AddControllers();
 
+//Habilita o acesso aos endpoints no Swagger
 builder.Services.AddEndpointsApiExplorer();
+
+// Adiciona suporte ao Swagger para documentação da API
 builder.Services.AddSwaggerGen();
+
+// Configuração do OData para permitir filtros, ordenação, paginação, etc.
 builder.Services.ODataConfiguration();
 
-#region Adição do Serilog
-//Log.Logger = new LoggerConfiguration()
-//            .MinimumLevel.Debug()
-//            .WriteTo.Console()
-//            .WriteTo.File("logs/myapp.txt", rollingInterval: RollingInterval.Day)
-//            .CreateLogger();
-//builder.Host.UseSerilog(Log.Logger);
-#endregion
-
+// Constrói a aplicação com as configurações definidas
 var app = builder.Build();
 
 CreateDatabase(app);
 
-//app.MapDefaultEndpoints();
 
 // Configure the HTTP Command pipeline.
 if (app.Environment.IsDevelopment())
@@ -41,21 +37,24 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
-
+// Redireciona requisições HTTP para HTTPS
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
+// Mapeia os controladores para as rotas definidas
 app.MapControllers();
 
 app.Run();
 
-
+// Cria o banco de dados caso ele ainda não exista.
 void CreateDatabase(WebApplication app)
 {
+    // Cria um escopo de serviço para acessar os serviços da aplicação
     var serviceScope = app.Services.CreateScope();
+
+    // Obtém o contexto do banco de dados
     var dataContext = serviceScope.ServiceProvider.GetService<AppDbContext>();
+
+    //Verifica se o Banco de Dados foi criado
     dataContext?.Database.EnsureCreated();
 
     // Carga no banco de dados, não necessária no caso deste crud
