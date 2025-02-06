@@ -12,6 +12,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestauranteAPI.WebAPI", "Re
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1181BA09-8BF2-4618-AE7E-5FA9315CAC89}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0E614D58-1BF6-46EF-A757-2994042472E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{335A0240-4AD6-47AA-8D4B-EB3B2FF14828}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B04F9F79-55AF-4B44-B744-A925157D3EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +47,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50F14DBB-A63C-4FE7-BA63-1D2FD8E5B351} = {0E614D58-1BF6-46EF-A757-2994042472E5}
+		{91D6690F-5299-445C-BCE9-CC8649AC790B} = {0E614D58-1BF6-46EF-A757-2994042472E5}
+		{8D069F28-D7F9-41B1-983B-9A0AB4989392} = {335A0240-4AD6-47AA-8D4B-EB3B2FF14828}
+		{D2852ACB-AA01-46FA-BA34-16D2BEA2A542} = {B04F9F79-55AF-4B44-B744-A925157D3EE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69766354-AE61-479C-B6D7-C8FFA3931E1F}

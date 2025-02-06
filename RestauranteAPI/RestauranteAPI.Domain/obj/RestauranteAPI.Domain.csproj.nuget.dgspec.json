@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {}
+    "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
+    "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
         "projectName": "RestauranteAPI.Domain",
-        "projectPath": "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+        "projectPath": "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\joaom\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",

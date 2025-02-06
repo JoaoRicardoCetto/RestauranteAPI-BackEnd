@@ -1,18 +1,19 @@
 using RestauranteAPI.Domain.Common;
 using RestauranteAPI.Domain.Validation;
+using System.ComponentModel.DataAnnotations;
 
   namespace RestauranteAPI.Domain.Entities
     {
     public  class Cliente : BaseEntity {
 
-      public string Nome { get; set; }
-      public string Telefone { get; set; }
-      public String Identification { get; set; }
-      public Guid? ClienteCidadeId { get; set; }
-      //OneToMany
-      public ICollection<Pedido>? Pedidos { get; set;}
-      //ManyToOne
-      public Cidade? Cidade { get; set; }
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
+        public String Identification { get; set; }
+        public Guid? ClienteCidadeId { get; set; }
+        //OneToMany
+        public ICollection<Pedido>? Pedidos { get; set;}
+        //ManyToOne
+        public Cidade? Cidade { get; set; }
 
         public Cliente()
         {

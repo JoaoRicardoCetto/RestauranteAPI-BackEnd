@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NzBOB5UKk5w=",
+  "dgSpecHash": "d1/xhrZoW3I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
+  "projectFilePath": "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaom\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\joaom\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\bouncycastle.cryptography.2.3.0.nupkg.sha512",

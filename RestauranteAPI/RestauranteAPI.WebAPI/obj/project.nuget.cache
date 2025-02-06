@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YS3KDNUVygc=",
+  "dgSpecHash": "oVPMnrwHVJs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joaom\\source\\repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.WebAPI\\RestauranteAPI.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\joaom\\Source\\Repos\\RestauranteAPI-BackEnd\\RestauranteAPI\\RestauranteAPI.WebAPI\\RestauranteAPI.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaom\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\joaom\\.nuget\\packages\\awssdk.core\\3.7.303.23\\awssdk.core.3.7.303.23.nupkg.sha512",
